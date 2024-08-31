@@ -1,10 +1,10 @@
 from __future__ import annotations
 
 class Control:
-    # def __init__(self) -> None: # Se puede eliminar
-    #     self._tv = None    # Se puede eliminar
+    def __init__(self) -> None: # Se puede eliminar
+        self._tv = None    # Se puede eliminar
 
-    def enlazar(self, tv: TV):
+    def enlazar(self, tv):
         self._tv = tv
         tv.setControl(self)
 
